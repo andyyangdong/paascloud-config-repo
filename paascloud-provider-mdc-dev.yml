@@ -9,6 +9,7 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/paascloud_mdc?characterEncoding=utf8&useSSL=false
 
+
 liquibase:
   change-log: classpath:liquibase/index.xml
   user: ${spring.datasource.username}

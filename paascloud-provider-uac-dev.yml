@@ -58,6 +58,10 @@ paascloud:
   token:
     interceptor:
       enable: true
+
+   zk:
+      zkAddressList: paascloud-provider-zk:2181
+
   oauth2:
     jwtSigningKey: paascloud
     client:

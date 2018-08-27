@@ -58,10 +58,6 @@ paascloud:
   token:
     interceptor:
       enable: true
-
-   zk:
-      zkAddressList: paascloud-provider-zk:2181
-
   oauth2:
     jwtSigningKey: paascloud
     client:
@@ -70,6 +66,10 @@ paascloud:
       clientId: ${security.oauth2.client.clientId}
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
+  zk:
+    zkAddressList: paascloud-provider-zk:2181
+    namespace: paascloud-elastic-job
+
   security:
     social:
       filterProcessesUrl: /auth/callback

@@ -135,5 +135,6 @@ paascloud:
     qrCode:
       pcPath: /data/file/qrCode/alipay
       qiniuPath: alipay/QRCode/
-#  zk:
-##    zkAddressList: paascloud-provider-zk:2181
+  zk:
+    zkAddressList: localhost:2181
+#    zk项目名字

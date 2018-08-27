@@ -66,9 +66,9 @@ paascloud:
       clientId: ${security.oauth2.client.clientId}
       clientSecret: ${security.oauth2.client.clientSecret}
       clientAuthenticationScheme: header
-  zk:
-    zkAddressList: paascloud-provider-zk:2181
-    namespace: paascloud-elastic-job
+#  zk:
+#    zkAddressList: paascloud-provider-zk:2181
+#    namespace: paascloud-elastic-job
 
   security:
     social:

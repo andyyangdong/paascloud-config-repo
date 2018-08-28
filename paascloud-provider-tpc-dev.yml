@@ -91,3 +91,5 @@ dataflowJob:
   cron: 0 */20 * * * ?
   shardingTotalCount: 1
   shardingItemParameters: 0=Beijing,1=Shanghai,2=Guangzhou
+
+#  class实现类、registry-center-ref配置中心zk的id（regCenter）、cron定时任务规则、sharding-total-count总分片数。

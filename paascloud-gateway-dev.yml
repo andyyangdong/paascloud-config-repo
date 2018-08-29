@@ -90,16 +90,16 @@ zuul:
         ReadTimeout: 10000
   add-proxy-headers: true
   add-host-header: true
-
+#  http://localhost:7979/uac/oauth/token
 security:
   oauth2:
     client:
       clientId: paascloud-client-gateway
       clientSecret: paascloudClientSecret
-      access-token-uri: http://localhost:7979/uac/oauth/token
-      user-authorization-uri: http://localhost:7979/uac/oauth/authorize
+      access-token-uri: http://localhost:7979/oauth/token
+      user-authorization-uri: http://localhost:7979/oauth/authorize
     resource:
-      user-info-uri: http://localhost:7979/uac/user
+      user-info-uri: http://localhost:7979/user
       prefer-token-info: false
       jwt:
         key-uri: http://localhost:8000/oauth/token_key
